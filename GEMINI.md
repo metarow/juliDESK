@@ -69,9 +69,13 @@ cargo tauri build
 - [x] Initiales Tauri-2-Gerüst mit statischer Einbindung von JupyterLite (`frontendDist: "../src/_output"`).
 - [x] Aktualisierung aller Tauri-Crates auf **Tauri v2.11.x** und `tauri-cli v2.11.x`.
 - [x] Erfolgreicher Release-Build und Verifikation der `.exe` und Installer unter Windows.
+- [x] **Markdown-First Notebook Integration (`julidesk-markdown`):**
+  - Eigene JupyterLite-Erweiterung (`src/extensions/julidesk-markdown`) zur direkten Nutzung von reinen `.md`-Dateien als Notebooks (YAML-Frontmatter + Markdown-Fließtext + Codeblöcke).
+  - Automatisches Parsing beim Laden & direktes Serialisieren zu reinem Markdown beim Speichern (keine `.ipynb`-JSON-Artefakte, kein Pairing notwendig).
+  - Standard-Dateizuordnung via `src/overrides.json`: `.md`-Dateien öffnen direkt im interaktiven Notebook-Editor.
 
 ### Geplante Meilensteine / Offene Aufgaben:
-- [ ] **Natives Dateisystem-Handling:** Implementierung eines Tauri-Plugins / Content-Managers, damit Notebooks (`.ipynb`) direkt auf dem lokalen Dateisystem geöffnet und gespeichert werden können (statt nur im Browser-IndexedDB).
+- [ ] **Natives Dateisystem-Handling:** Implementierung eines Tauri-Plugins / Content-Managers, damit `.md`-Notebooks direkt auf dem lokalen Dateisystem geöffnet und gespeichert werden können (statt nur im Browser-IndexedDB).
 - [ ] **App-Menüs & Shortcuts:** Natives Menüband (Datei -> Öffnen, Speichern, Neu, Einstellungen).
 - [ ] **Erweiterter Python-Support:** Vorinstallierte wissenschaftliche Python-Bibliotheken (NumPy, Pandas, Matplotlib) im Pyodide-Preload konfigurieren.
 - [ ] **Cross-Platform Builds:** GitHub Actions CI/CD für automatische Windows-, macOS- und Linux-Releases.

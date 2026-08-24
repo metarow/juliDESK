@@ -1,0 +1,12 @@
+{
+  "@jupyterlab/docmanager-extension:plugin": {
+    "defaultViewers": {
+      "markdown": "Notebook"
+    }
+  },
+  "@jupyterlab/filebrowser-extension:browser": {
+    "defaultViewers": {
+      "markdown": "Notebook"
+    }
+  }
+}

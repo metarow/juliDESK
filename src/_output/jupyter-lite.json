@@ -11,6 +11,16 @@
         "extension": "./extension",
         "load": "static/remoteEntry.3745c44cbbd62cec9a73.js",
         "name": "@jupyterlite/pyodide-kernel-extension"
+      },
+      {
+        "extension": "./index",
+        "load": "static/remoteEntry.js",
+        "name": "julidesk-markdown"
+      },
+      {
+        "extension": "./extension",
+        "load": "static/remoteEntry.e928860fd982eedb.js",
+        "name": "jupyterlab-jupytext"
       }
     ],
     "fileTypes": {
@@ -294,6 +304,18 @@
         "pipliteUrls": [
           "./extensions/@jupyterlite/pyodide-kernel-extension/static/pypi/all.json?sha256=6428e372c283ca4b67a641295c5d9c8abeed5cf341b24ffe41b313fcdcaf9be4"
         ]
+      }
+    },
+    "settingsOverrides": {
+      "@jupyterlab/docmanager-extension:plugin": {
+        "defaultViewers": {
+          "markdown": "Notebook"
+        }
+      },
+      "@jupyterlab/filebrowser-extension:browser": {
+        "defaultViewers": {
+          "markdown": "Notebook"
+        }
       }
     }
   },

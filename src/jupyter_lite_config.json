@@ -1,0 +1,7 @@
+{
+  "LiteBuildConfig": {
+    "federated_extensions": [
+      "./extensions/julidesk-markdown"
+    ]
+  }
+}

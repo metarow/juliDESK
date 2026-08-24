@@ -1,0 +1,24 @@
+{
+  "name": "julidesk-markdown",
+  "version": "0.1.0",
+  "description": "Native Markdown-First Notebook support for juliDESK",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension",
+    "markdown",
+    "jupytext",
+    "julidesk"
+  ],
+  "author": "juliDESK Team",
+  "license": "MIT",
+  "main": "static/remoteEntry.js",
+  "jupyterlab": {
+    "extension": true,
+    "sharedPackages": {},
+    "_build": {
+      "load": "static/remoteEntry.js",
+      "extension": "./index"
+    }
+  }
+}

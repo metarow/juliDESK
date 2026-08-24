@@ -1,0 +1,5 @@
+{
+  "packageManager": "npm",
+  "packageName": "julidesk-markdown",
+  "uninstallInstructions": "Built-in juliDESK extension"
+}
