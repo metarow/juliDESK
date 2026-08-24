@@ -7,16 +7,36 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Node / Web
 node_modules
 dist
 dist-ssr
 *.local
 
-# Editor directories and files
+# Rust / Tauri build artifacts
+/src-tauri/target
+target/
+**/*.rs.bk
+Cargo.lock.orig
+
+# Python & JupyterLite
+.venv/
+src/.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.jupyterlite.doit.db
+src/.jupyterlite.doit.db
+src/.jupyter/
+
+# Editor & OS files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
+Thumbs.db
 *.suo
 *.ntvs*
 *.njsproj
